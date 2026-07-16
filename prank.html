@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Important Message for You</title>
+
+  <!-- WhatsApp link preview -->
+  <meta property="og:title" content="Important Message for You">
+  <meta property="og:description" content="Please open this immediately. It is very important!">
+  <meta property="og:type" content="website">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      overflow: hidden;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #111827, #7c2d12, #991b1b);
+    }
+
+    .card {
+      width: 100%;
+      max-width: 430px;
+      padding: 35px 25px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 24px;
+      background: rgba(0, 0, 0, 0.35);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(12px);
+    }
+
+    .emoji {
+      font-size: 70px;
+      animation: shake 1s infinite;
+    }
+
+    h1 {
+      margin: 15px 0 10px;
+      font-size: 30px;
+    }
+
+    p {
+      color: #f3f4f6;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 18px;
+      padding: 16px 20px;
+      border: none;
+      border-radius: 50px;
+      color: #111827;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      background: #fbbf24;
+      box-shadow: 0 10px 30px rgba(251, 191, 36, 0.35);
+    }
+
+    button:active {
+      transform: scale(0.96);
+    }
+
+    #message {
+      display: none;
+    }
+
+    .swear {
+      color: #fbbf24;
+      font-size: 38px;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .small {
+      font-size: 14px;
+      color: #d1d5db;
+    }
+
+    .confetti {
+      position: fixed;
+      top: -30px;
+      font-size: 28px;
+      animation: fall 3s linear forwards;
+      pointer-events: none;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(-8deg); }
+      75% { transform: rotate(8deg); }
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(110vh) rotate(720deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card" id="warning">
+    <div class="emoji">⚠️</div>
+
+    <h1>Hey, Bro!</h1>
+
+    <p>
+      Someone has sent you a very serious and confidential message.
+      Make sure nobody is watching before opening it.
+    </p>
+
+    <button onclick="showMessage()">Open Important Message</button>
+  </div>
+
+  <div class="card" id="message">
+    <div class="emoji">😂🖕</div>
+
+    <h1 class="swear">
+      You Peddi!
+    </h1>
+
+    <p>
+      I made an entire bloody website just to tell you that you’re a
+      certified peddi! 😂
+    </p>
+
+    <p class="small">
+      Now stop wasting time and get back to work, peddi!
+    </p>
+
+
+</body>
+</html>
